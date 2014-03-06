@@ -1,0 +1,48 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+	function gup(name) {
+		var regexS = "[\\?&]" + name + "=([^&#]*)";
+		var regex = new RegExp(regexS);
+		var tmpURL = window.location.href;
+		var results = regex.exec(tmpURL);
+		if (results == null)
+			return "";
+		else
+			return results[1];
+	}
+	var frank_param = gup('OS');
+	var ocupante_4 = gup('ocupante_4');
+	var puerta_4 = gup('puerta_4');
+	var trampa_4 = gup('trampa_4');
+	var ocupante_5 = gup('ocupante_5');
+	var puerta_5 = gup('puerta_5');
+	var trampa_5 = gup('trampa_5');
+	document.open("text/text");
+	document.write("<h1>Se recibio el formulario enviado por <b>" + frank_param + "</b></h1>");
+	document.write("<hr />");
+
+	document.write("<html>");
+	document.write("	<head>");
+	document.write("		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />");
+	document.write("		<\script type='text/javascript' src='./js/casillas.js'\><\/script\>");
+	document.write("		<link rel='stylesheet' href='./css/principal.css' type='text/css' media='screen'>");
+	document.write("</head>");
+	document.write("<body>");
+	document.write("		<div class='primera'>");   
+	document.write("		<table>");
+	document.write("			<tr>");
+	document.write("				<td id='pasillo_4' class='pasillos' onclick='explorar_4(this)'>");
+	document.write("						<img id='ocupante_4' class='" + ocupante_4 + "' />");
+	document.write("						<img id='puerta_4' class='" + puerta_4 + "' />");
+	document.write("						<img id='trampa_4' class='" + trampa_4 + "' />");
+	document.write("					</td>");
+	document.write("				<td id='pasillo_5' class='pasillos' onclick='explorar_5(this)'>");
+	document.write("						<img id='ocupante_5' class='" + ocupante_5 + "' />");
+	document.write("						<img id='puerta_5' class='" + puerta_5 + "' />");
+	document.write("						<img id='trampa_5' class='" + trampa_5 + "' />");
+	document.write("					</td>");
+	document.write("				</tr>");
+	document.write("		</table>");
+	document.write("		</div>");
+</script>
