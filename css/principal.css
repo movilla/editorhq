@@ -1,0 +1,1182 @@
+/* pricipal */
+
+body {
+	width: 140%;
+	height: 100%;
+	margin: 10px 0 0 25%;
+	display: flex;
+}
+
+.pasillo {
+	opacity: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 57px;
+	height: 57px;
+}
+
+.pasillos {
+	background-image: url('./img/casillas/pasillo.jpg');
+	opacity: 0.7;
+	width: 62px;
+	height: 62px;
+}
+
+.cuadro {
+	opacity: 0.7;
+}
+
+.casilla {
+	width: 50px;
+}
+
+.seleccion {
+	width: 100%;
+}
+
+.panel_selec{
+
+}
+
+.panel {
+	position: fixed;
+	visibility: hidden;
+	min-width: 125px;
+	width: 17%;
+	z-index: 20;
+	left: 0px;
+	top: 0px;
+	border-bottom: 1px;
+	/*background-color: #000;*/
+	/*background-image: url('https://diasp.org/assets/header-bg.png');*/
+}
+
+.cerrar {
+	font-size: x-large;
+	right: 0px;
+	border: 2px solid;
+	position: absolute;
+	display: flex;
+	width: 16%;
+	padding: 5% 41%;
+	margin-top: 10%;
+	background-color: #FFF;
+}
+
+select {
+	font-size: x-large;
+	width: 100%;
+	height: 10%;
+	border: 1px solid #000;
+	background-color: #FFF;
+	margin-top: 10%;
+	border: 2px solid;
+	padding: 5% 0 5% 0;
+}
+
+.indice_casilla {
+	width: 50px;
+	height: 50px;
+	box-shadow: inset 0px 0px 10px 1px #000;
+	outline: 1px solid #000;
+}
+
+.seleccionada {
+	background-color: #F5A9A9;
+}
+
+/* expeciones navegadores */
+
+@-moz-document url-prefix() {
+	table {
+		margin-top: -2px;
+	}
+}
+
+/* enemigos */
+
+.orco, .goblin, .esqueleto, .zombi, .momia, .fimir, .guerrero_caos, .gargola {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+	margin-left: 2px;
+	margin-top: -23px;
+	z-index: 5;
+}
+
+.orco:after {
+	content: url('./img/iconos/orco.png');
+	-moz-transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-o-transform: scale(1.0);
+}
+
+.goblin:before {
+	content: url('./img/iconos/goblin.png');
+}
+
+.esqueleto:before {
+	content: url('./img/iconos/esqueleto.png');
+}
+
+.zombi:before {
+	content: url('./img/iconos/zombi.png');
+}
+
+.momia:before {
+	content: url('./img/iconos/momia.png');
+}
+
+.fimir:before {
+	content: url('./img/iconos/fimir.png');
+}
+
+.guerrero_caos:before {
+	content: url('./img/iconos/guerrero_caos.png');
+}
+
+.gargola:before {
+	margin-top: -5px;
+	margin-left: -10px;
+	content: url('./img/iconos/gargola.png');
+	-moz-transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-o-transform: scale(1.0);
+}
+
+/* heroes */
+
+.barbaro, .enano, .elfo, .mago {
+	display: flex;
+	position: absolute;
+	margin-left: 2px;
+	margin-top: -23px;
+	z-index: 5;
+}
+
+.barbaro:before {
+	content: url('./img/iconos/barbaro.png');
+}
+
+.enano:before {
+	content: url('./img/iconos/enano.png');
+}
+
+.elfo:before {
+	content: url('./img/iconos/elfo.png');
+}
+
+.mago:before {
+	content: url('./img/iconos/mago.png');
+}
+
+/* letras */
+
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m {
+	display: flex;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: -15px;
+	-webkit-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+}
+
+.a:before {
+	content: url('./img/iconos/letra_a.png');
+}
+
+.b:before {
+	content: url('./img/iconos/letra_b.png');
+}
+
+.c:before {
+	content: url('./img/iconos/letra_c.png');
+}
+
+.d:before {
+	content: url('./img/iconos/letra_d.png');
+}
+
+.e:before {
+	content: url('./img/iconos/letra_e.png');
+}
+
+.f:before {
+	content: url('./img/iconos/letra_f.png');
+}
+
+.g:before {
+	content: url('./img/iconos/letra_g.png');
+}
+
+.h:before {
+	content: url('./img/iconos/letra_h.png');
+}
+
+.i:before {
+	content: url('./img/iconos/letra_i.png');
+}
+
+.j:before {
+	content: url('./img/iconos/letra_j.png');
+}
+
+.k:before {
+	content: url('./img/iconos/letra_k.png');
+}
+
+.l:before {
+	content: url('./img/iconos/letra_l.png');
+}
+
+.m:before {
+	content: url('./img/iconos/letra_m.png');
+}
+
+/* rocas */
+
+.roca {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+	z-index: 5;
+	margin-left: -2px;
+	margin-top: -27px;
+}
+
+.roca:before {
+	content: url('./img/iconos/roca.png');
+	-webkit-transform: scale(.94);
+	-moz-transform: scale(.94);
+	-o-transform: scale(.94);
+}
+
+.rocas_este, .rocas_oeste, .rocas_sur, .rocas_norte {
+	opacity: 0;
+}
+
+.rocas_este:before {
+	content: url('./img/iconos/roca_doble_este.png');
+	display: flex;
+	position: absolute;
+	margin-left: -2px;
+	margin-top: -27px;
+	-moz-transform: scale(.94);
+	-o-transform: scale(.94);
+	-webkit-transform: scale(.94);
+	z-index: 5;
+}
+
+.rocas_oeste:before {
+	content: url('./img/iconos/roca_doble_este.png');
+	display: flex;
+	position: absolute;
+	margin-top: -27px;
+	margin-left: -54px;
+	z-index: 5;
+	-webkit-transform: scale(.94);
+	-moz-transform: scale(.94);
+	-o-transform: scale(.94);
+}
+
+.rocas_sur:before {
+	content: url('./img/iconos/roca_doble_este.png');
+	-webkit-transform: scale(.94) rotate(90deg);
+	-moz-transform: scale(.94) rotate(90deg);
+	-o-transform: scale(.94) rotate(90deg);
+	transform : rotate(90deg);
+	display: flex;
+	position: absolute;
+	margin-left: -31px;
+	margin-top: -4px;
+	z-index: 5;
+}
+
+.rocas_norte:before {
+	content: url('./img/iconos/roca_doble_este.png');
+	-webkit-transform: scale(.94) rotate(270deg);
+	-moz-transform: scale(.94) rotate(270deg);
+	-o-transform: scale(.94) rotate(270deg);
+	transform : scale(.94) rotate(270deg);
+	display: block;
+	position: absolute;
+	z-index: 5;
+	margin-left: -27px;
+	margin-top: -54px;
+}
+
+/* puertas */
+
+.puerta_sur, .puerta_norte, .puerta_este, .puerta_oeste {
+	opacity: 0;
+	display: flex;
+	z-index: 2;
+}
+
+.puerta_sur:before {
+	content: url('./img/iconos/puerta_sur.png');
+	position: absolute;
+	margin-top: 35px;
+	margin-top: 10px;
+	margin-left: -7px;
+}
+
+.puerta_norte:before {
+	content: url('./img/iconos/puerta_sur.png');
+	position: absolute;
+	margin-top: -40px;
+	margin-left: -7px;
+}
+
+.puerta_este:before {
+	content: url('./img/iconos/puerta_este.png');
+	position: absolute;
+	margin-left: 35px;
+	margin-top: -33px;
+}
+
+.puerta_oeste:before {
+	content: url('./img/iconos/puerta_este.png');
+	position: absolute;
+	margin-left: -15px;
+	margin-top: -33px;
+}
+
+/* mobiliario */
+
+.laboratorio_sur, .laboratorio_norte, .laboratorio_este, .laboratorio_oeste {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.laboratorio_sur:before { 
+	content: url('./img/iconos/laboratorio.png');
+	margin-left: 30px;
+	margin-top: -5px;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+}
+
+.laboratorio_norte:before {
+	content: url('./img/iconos/laboratorio.png');
+	-webkit-transform: scale(1.5) rotate(180deg);
+	-moz-transform: scale(1.5) rotate(180deg);
+	-o-transform: scale(1.5) rotate(180deg);
+	transform: scale(1.5) rotate(180deg);
+	margin-left: 30px;
+	margin-top: -5px;
+}
+
+.laboratorio_este:before {
+	content: url('./img/iconos/laboratorio.png');
+	-webkit-transform: scale(1.5) rotate(270deg);
+	-moz-transform: scale(1.5) rotate(270deg);
+	-o-transform: scale(1.5) rotate(270deg);
+	transform: scale(1.5) rotate(270eg);
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+.laboratorio_oeste:before {
+	content: url('./img/iconos/laboratorio.png');
+	-webkit-transform: scale(1.5) rotate(90deg);
+	-moz-transform: scale(1.5) rotate(90deg);
+	-o-transform: scale(1.5) rotate(90deg);
+	transform : scale(1.5) rotate(90eg);
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+/* libreria */
+
+.libreria_sur, .libreria_este {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.libreria_sur:before {
+	content: url('./img/iconos/libreria.png');
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	margin-left: 30px;
+	margin-top: -15px;
+}
+
+.libreria_este:before {
+	content: url('./img/iconos/libreria.png');
+	-webkit-transform: scale(1.5) rotate(270deg);
+	-moz-transform: scale(1.5) rotate(270deg);
+	-o-transform: scale(1.5) rotate(270deg);
+	margin-left: -20px;
+	margin-top: 33px;
+}
+
+/* armarios */
+
+.armario_sur, .armario_este {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.armario_este:before {
+	content: url('./img/iconos/armario.png');
+	-webkit-transform: scale(1.5) rotate(270deg);
+	-moz-transform: scale(1.5) rotate(270deg);
+	-o-transform: scale(1.5) rotate(270deg);
+	margin-left: -20px;
+	margin-top: 33px;
+}
+
+.armario_sur:before {
+	content: url('./img/iconos/armario.png');
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	margin-left: 30px;
+	margin-top: -15px;
+}
+
+/* chimenea */
+
+.chimenea_sur, .chimenea_este, .chimenea_norte, .chimenea_oeste {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.chimenea_sur:before {
+	content: url('./img/iconos/chimenea.png');
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	margin-left: 26px;
+	margin-top: -14px;
+}
+
+.chimenea_norte:before {
+	content: url('./img/iconos/chimenea.png');
+	-webkit-transform: scale(1.4) rotate(180deg);
+	-moz-transform: scale(1.4) rotate(180deg);
+	-o-transform: scale(1.4) rotate(180deg);
+	transform: scale(1.4) rotate(180eg);
+	margin-left: 26px;
+	margin-top: -23px;
+}
+
+.chimenea_este:before {
+	content: url('./img/iconos/chimenea.png');
+	-webkit-transform: scale(1.4) rotate(270deg);
+	-moz-transform: scale(1.4) rotate(270deg);
+	-o-transform: scale(1.4) rotate(270deg);
+	transform: scale(1.4) rotate(270eg);
+	margin-left: -20px;
+	margin-top: 30px;
+}
+
+.chimenea_oeste:before {
+	content: url('./img/iconos/chimenea.png');
+	-webkit-transform: scale(1.4) rotate(90deg);
+	-moz-transform: scale(1.4) rotate(90deg);
+	-o-transform: scale(1.4) rotate(90deg);
+	transform: scale(1.4) rotate(90eg);
+	margin-left: -27px;
+	margin-top: 30px;
+}
+
+/* potro de torturas */
+
+.potro_sur, .potro_norte, .potro_este, .potro_oeste {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.potro_sur:before {
+	content: url('./img/iconos/potro.png');
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	margin-left: 17px;
+	margin-top: -5px;
+}
+
+.potro_norte:before {
+	content: url('./img/iconos/potro.png');
+	-webkit-transform: scale(1.4) rotate(180deg);
+	-moz-transform: scale(1.4) rotate(180deg);
+	-o-transform: scale(1.4) rotate(180deg);
+	transform: scale(1.4) rotate(180deg);
+	margin-left: 19px;
+	margin-top: -97px;
+}
+
+.potro_este:before {
+	content: url('./img/iconos/potro.png');
+	-webkit-transform: scale(1.4) rotate(270deg);
+	-moz-transform: scale(1.4) rotate(270deg);
+	-o-transform: scale(1.4) rotate(270deg);
+	transform: scale(1.4) rotate(270eg);
+	margin-left: 45px;
+	margin-top: -25px;
+}
+
+.potro_oeste:before {
+	content: url('./img/iconos/potro.png');
+	-webkit-transform: scale(1.4) rotate(90deg);
+	-moz-transform: scale(1.4) rotate(90deg);
+	-o-transform: scale(1.4) rotate(90deg);
+	transform: scale(1.4) rotate(90eg);
+	margin-left: -50px;
+	margin-top: -25px;
+}
+
+/* mesa de mago */
+
+.mesa_mago_sur, .mesa_mago_norte, .mesa_mago_este, .mesa_mago_oeste {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.mesa_mago_sur:before {
+	content: url('./img/iconos/mesa_mago.png');
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	margin-left: 30px;
+	margin-top: -3px;
+}
+
+.mesa_mago_norte:before {
+	content: url('./img/iconos/mesa_mago.png');
+	-webkit-transform: scale(1.4) rotate(180deg);
+	-moz-transform: scale(1.4) rotate(180deg);
+	-o-transform: scale(1.4) rotate(180deg);
+	transform: scale(1.4) rotate(180deg);
+	margin-left: 25px;
+	margin-top: -60px;
+}
+
+.mesa_mago_este:before {
+	content: url('./img/iconos/mesa_mago.png');
+	-webkit-transform: scale(1.4) rotate(270deg);
+	-moz-transform: scale(1.4) rotate(270deg);
+	-o-transform: scale(1.4) rotate(270deg);
+	transform: scale(1.4) rotate(270eg);
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+.mesa_mago_oeste:before {
+	content: url('./img/iconos/mesa_mago.png');
+	-webkit-transform: scale(1.4) rotate(90deg);
+	-moz-transform: scale(1.4) rotate(90deg);
+	-o-transform: scale(1.4) rotate(90deg);
+	transform: scale(1.4) rotate(90eg);
+	margin-left: -45px;
+	margin-top: 15px;
+}
+
+/* tumba */
+
+.tumba_sur, .tumba_norte, .tumba_oeste, .tumba_este {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.tumba_sur:before {
+	content: url('./img/iconos/tumba.png');
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	margin-left: 17px;
+	margin-top: -5px;
+}
+
+.tumba_norte:before {
+	content: url('./img/iconos/tumba.png');
+	-webkit-transform: scale(1.4) rotate(180deg);
+	-moz-transform: scale(1.4) rotate(180deg);
+	-o-transform: scale(1.4) rotate(180deg);
+	transform: scale(1.4) rotate(180deg);
+	margin-left: 19px;
+	margin-top: -97px;
+}
+
+.tumba_este:before {
+	content: url('./img/iconos/tumba.png');
+	-webkit-transform: scale(1.4) rotate(270deg);
+	-moz-transform: scale(1.4) rotate(270deg);
+	-o-transform: scale(1.4) rotate(270deg);
+	transform: scale(1.4) rotate(270eg);
+	margin-left: 45px;
+	margin-top: -25px;
+}
+
+.tumba_oeste:before {
+	content: url('./img/iconos/tumba.png');
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: scale(1.4) rotate(90deg);
+	-moz-transform: scale(1.4) rotate(90deg);
+	-o-transform: scale(1.4) rotate(90deg);
+	transform: scale(1.4) rotate(90eg);
+	margin-left: -50px;
+	margin-top: -25px;
+}
+
+/* mesa */
+
+.mesa_sur, .mesa_este {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.mesa_sur:before {
+	content: url('./img/iconos/mesa.png');
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	margin-left: 30px;
+	margin-top: -3px;
+}
+
+.mesa_este:before {
+	content: url('./img/iconos/mesa.png');
+	-webkit-transform: scale(1.4) rotate(270deg);
+	-moz-transform: scale(1.4) rotate(270deg);
+	-o-transform: scale(1.4) rotate(270deg);
+	transform: scale(1.4) rotate(270eg);
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+.cofre_sur, .cofre_este {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.cofre_sur:before {
+	content: url('./img/iconos/cofre.png');
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	margin-left: 10px;
+	margin-top: -10px;
+}
+
+.cofre_este:before {
+	content: url('./img/iconos/cofre.png');
+	-webkit-transform: scale(1.5) rotate(270deg);
+	-moz-transform: scale(1.5) rotate(270deg);
+	-o-transform: scale(1.5) rotate(270deg);
+	transform: scale(1.5) rotate(270eg);
+	margin-left: 10px;
+	margin-top: -14px;
+}
+
+.trono_sur, .trono_este, .trono_norte, .trono_oeste {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.trono_sur:before {
+	content: url('./img/iconos/trono.png');
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	margin-left: 10px;
+	margin-top: -15px;
+}
+
+.trono_norte:before {
+	content: url('./img/iconos/trono.png');
+	-webkit-transform: scale(1.5) rotate(180deg);
+	-moz-transform: scale(1.5) rotate(180deg);
+	-o-transform: scale(1.5) rotate(180deg);
+	transform: scale(1.5) rotate(180eg);
+	margin-left: 10px;
+	margin-top: -20px;
+}
+
+.trono_este:before {
+	content: url('./img/iconos/trono.png');
+	-webkit-transform: scale(1.5) rotate(270deg);
+	-moz-transform: scale(1.5) rotate(270deg);
+	-o-transform: scale(1.5) rotate(270deg);
+	transform: scale(1.5) rotate(270eg);
+	margin-left: 15px;
+	margin-top: -17px;
+}
+
+.trono_oeste:before {
+	content: url('./img/iconos/trono.png');
+	-webkit-transform: scale(1.5) rotate(90deg);
+	-moz-transform: scale(1.5) rotate(90deg);
+	-o-transform: scale(1.5) rotate(90deg);
+	transform: scale(1.5) rotate(90eg);
+	margin-left: 7px;
+	margin-top: -17px;
+}
+
+/* armero */
+
+.armero_sur, .armero_este {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.armero_sur:before {
+	content: url('./img/iconos/armero.png');
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	margin-left: 25px;
+	margin-top: -15px;
+}
+
+.armero_este:before {
+	content: url('./img/iconos/armero.png');
+	-webkit-transform: scale(1.5) rotate(270deg);
+	-moz-transform: scale(1.5) rotate(270deg);
+	-o-transform: scale(1.5) rotate(270deg);
+	transform : scale(1.5) rotate(270eg);
+	margin-left: -22px;
+	margin-top: 35px;
+}
+
+/* trampas */
+
+.trampa {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 41px;
+	height: 40px;	
+}
+
+.lanza, .abismo, .piedra_caida {
+	display: flex;
+	position: absolute;
+	margin-left: 2px;
+	margin-top: -23px;
+	opacity: 0;
+	z-index: 1;
+}
+
+.lanza:before {
+	content: url('./img/iconos/lanza.png');
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	margin-left: 0px;
+	margin-top: -4px;
+}
+
+.abismo:before {
+	content: url('./img/iconos/abismo.png');
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	margin-left: 12px;
+	margin-top: 10px;
+}
+
+.piedra_caida:before {
+	content: url('./img/iconos/piedra_caida.png');
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	margin-left: 6px;
+	margin-top: 7px;
+}
+
+/* paredes */
+
+.paredes {
+	border-top: 0px solid;
+	width: 135px;
+	height: 1px;
+	position: absolute;
+	margin-top: -64px;
+	border-color: #FFF;
+	margin-left: -5px;
+	z-index: 1;
+}
+
+.arriba {
+	border-top: 5px solid;
+	width: 52px;
+	height: 1px;
+	position: absolute;
+	margin-top: -27px;
+	border-color: #000;
+	margin-left: -1px;
+}
+
+.abajo {
+	border-top: 5px solid;
+	width: 52px;
+	height: 1px;
+	position: absolute;
+	margin-top: 22px;
+	border-color: #000;
+	margin-left: -1px;
+}
+
+.izquierda {
+	border-left: 5px solid;
+	width: 1px;
+	height: 52px;
+	position: absolute;
+	margin-top: -26px;
+	border-color: #000;
+	margin-left: -2px;
+}
+
+.derecha {
+	border-left: 5px solid;
+	width: 1px;
+	height: 52px;
+	position: absolute;
+	margin-top: -26px;
+	border-color: #000;
+	margin-left: 47px;
+}
+
+.arriba_abajo {
+	border-bottom: 5px solid;
+	border-top: 5px solid;
+	width: 52px;
+	height: 45px;
+	position: absolute;
+	margin-top: -27px;
+	border-color: #000;
+	margin-left: -1px;
+}
+
+.izquierda_derecha {
+	border-left: 5px solid;
+	width: 45px;
+	height: 52px;
+	position: absolute;
+	margin-top: -26px;
+	border-color: #000;
+	margin-left: -3px;
+	border-right: 5px solid;
+}
+
+.arriba_izquierda {
+	border-left: 5px solid;
+	border-top: 5px solid;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-top: -27px;
+	border-color: #000;
+	margin-left: -2px;
+}
+
+.arriba_derecha {
+	border-right: 5px solid;
+	border-top: 5px solid;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-top: -27px;
+	border-color: #000;
+	margin-left: -1px;
+}
+
+.abajo_izquierda {
+	border-left: 5px solid;
+	border-bottom: 5px solid;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-top: -26px;
+	border-color: #000;
+	margin-left: -2px;
+}
+
+.abajo_derecha {
+	border-right: 5px solid;
+	border-bottom: 5px solid;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-top: -26px;
+	border-color: #000;
+	margin-left: -1px;
+}
+
+/* suelo */
+
+.gris, .gris_oscuro, .violeta_oscuro, .azul_oscuro {
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	margin-top: -26px;
+	z-index: -1;
+	display: flex;
+	margin-left: -1px;
+}
+
+.gris {
+	background-color: gray;
+}
+
+.gris_oscuro {
+	background-color: DimGray;
+}
+
+.violeta_oscuro {
+	background-color: DarkOrchid;
+}
+
+.azul_oscuro {
+	background-color: DarkBlue;
+}
+
+/* puertas secretas */
+
+.puerta_secreta_norte, .puerta_secreta_sur, .puerta_secreta_este, .puerta_secreta_oeste {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+}
+
+.puerta_secreta_norte:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	margin-top: -20px;
+	margin-left: 12px;
+}
+
+.puerta_secreta_sur:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.4) rotate(180deg);
+	-moz-transform: scale(1.4) rotate(180deg);
+	-o-transform: scale(1.4) rotate(180deg);
+	transform: scale(1.4) rotate(180eg);
+	margin-top: -3px;
+	margin-left: 12px;
+}
+
+.puerta_secreta_este:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.4) rotate(90deg);
+	-moz-transform: scale(1.4) rotate(90deg);
+	-o-transform: scale(1.4) rotate(90deg);
+	transform: scale(1.4) rotate(90eg);
+	margin-left: 23px;
+	margin-top: -12px;
+}
+
+.puerta_secreta_oeste:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.4) rotate(270deg);
+	-moz-transform: scale(1.4) rotate(270deg);
+	-o-transform: scale(1.4) rotate(270deg);
+	transform: scale(1.4) rotate(270deg);
+	margin-left: 3px;
+	margin-top: -12px;
+}
+
+.numero_1, .numero_2, .numero_3, .numero_4, .numero_5, .numero_6, .numero_7, .numero_8, .numero_9 {
+	display: flex;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: -10px;
+}
+
+.numero_10, .numero_11 {
+	display: flex;
+	position: absolute;
+	margin-left: 15px;
+	margin-top: -10px;
+}
+
+.numero_1:before {
+	content: url('./img/iconos/numero_1.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_2:before {
+	content: url('./img/iconos/numero_2.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_3:before {
+	content: url('./img/iconos/numero_3.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_4:before {
+	content: url('./img/iconos/numero_4.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_5:before {
+	content: url('./img/iconos/numero_5.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_6:before {
+	content: url('./img/iconos/numero_6.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_7:before {
+	content: url('./img/iconos/numero_7.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_8:before {
+	content: url('./img/iconos/numero_8.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_9:before {
+	content: url('./img/iconos/numero_9.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_10:before {
+	content: url('./img/iconos/numero_10.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+.numero_11:before {
+	content: url('./img/iconos/numero_11.png');
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	transform: scale(1.6);
+}
+
+/* falsos */
+
+.ocupante {
+	content: url('./img/iconos/ocupante.png');
+	display: flex;
+	position: absolute;
+	padding-left: 22px;
+	margin-top: -30px;
+	width: 1px;
+	height: 1px;
+	z-index: -5;
+}
+
+.puerta {
+	content: url('./img/iconos/puerta.png');
+	opacity: 0;
+	position: absolute;
+	margin-top: 35px;
+	display: flex;
+	width: 1px;
+	height: 1px;
+	z-index: -5;
+} 
+
+.trampa {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+	padding-left: 25px;
+	margin-top: -40px;
+	width: 1px;
+	height: 1px;
+	z-index: -5;
+	content: url('./img/iconos/ocupante.png');
+}
+
+.suelo {
+	background-color: #FFF;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	margin-top: -62px;
+	z-index: -5;
+	display: flex;
+	margin-left: -1px;
+}
+
+.puerta_secreta {
+	content: url('./img/iconos/trampilla_blanco.png');
+	opacity: 0;
+	display: flex;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin-top: -62px;
+	margin-left: 12px;
+	z-index: -5;
+}
+
+.tesoro {
+	content: url('./img/iconos/tesoro_blanco.png');
+	display: flex;
+	position: absolute;
+	padding-left: 22px;
+	margin-top: -40px;
+	width: 1px;
+	height: 1px;
+	z-index: -5;
+}
