@@ -985,7 +985,7 @@ select {
 	-moz-transform: scale(1.4) rotate(180deg);
 	-o-transform: scale(1.4) rotate(180deg);
 	transform: scale(1.4) rotate(180eg);
-	margin-top: -3px;
+	margin-top: -2px;
 	margin-left: 12px;
 }
 
