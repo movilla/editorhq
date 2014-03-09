@@ -41,7 +41,6 @@ body {
 
 .panel {
 	position: fixed;
-	visibility: hidden;
 	min-width: 125px;
 	width: 17%;
 	z-index: 20;
