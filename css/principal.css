@@ -53,14 +53,25 @@ body {
 
 .cerrar {
 	font-size: x-large;
-	right: 0px;
 	border: 2px solid;
 	position: absolute;
 	display: flex;
-	width: 16%;
-	padding: 5% 41%;
 	margin-top: 10%;
 	background-color: #FFF;
+	width: 9%;
+	padding: 5% 19%;
+}
+
+.vaciar {
+	font-size: x-large;
+	border: 2px solid;
+	position: absolute;
+	display: flex;
+	margin-top: 10%;
+	background-color: #FFF;
+	width: 9%;
+	padding: 5% 19%;
+	right: 1px;
 }
 
 select {
