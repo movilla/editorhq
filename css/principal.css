@@ -58,8 +58,8 @@ body {
 	display: flex;
 	margin-top: 10%;
 	background-color: #FFF;
-	width: 9%;
-	padding: 5% 19%;
+	width: 15%;
+	padding: 5% 5% 5% 11%;
 }
 
 .vaciar {
@@ -69,8 +69,7 @@ body {
 	display: flex;
 	margin-top: 10%;
 	background-color: #FFF;
-	width: 9%;
-	padding: 5% 19%;
+	padding: 5% 15%;
 	right: 1px;
 }
 
