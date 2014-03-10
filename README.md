@@ -2,7 +2,7 @@
 
 ### ¿Cómo puedo empezar a usarlo?
 
-Simplemente tedrías que descargarlo el código en su [versión estable](https://github.com/movilla/editorhq/archive/master.zip) descomprimirlo y abrir el archivo **index.html** con un navegador, perferiblemente Chromium o Chrome.
+Simplemente tedrías que descargar el código en su [versión estable](https://github.com/movilla/editorhq/archive/master.zip) descomprimirlo y abrir el archivo **index.html** con un navegador, perferiblemente Chromium o Chrome.
 
 ### ¿Dónde puedo informar un problema?
 
