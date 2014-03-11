@@ -33,7 +33,7 @@ function vaciar_casilla(selCasilla) {
 }
 
 function cerrar_panel(divId) {
-	document.getElementById(divId).style.visibility = 'hidden';
+	document.getElementById('panel').style.visibility = 'hidden';
 }
 
 function cambiar_imagen(divIdSelect, divIdCasilla) {
