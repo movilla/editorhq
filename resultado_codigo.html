@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script>
 
-function gup( name ){
+function exurl( name ){
 	var regexS = "[\\?&]"+name+"=([^&#]*)";
 	var regex = new RegExp ( regexS );
 	var tmpURL = window.location.href;
@@ -12,16 +12,17 @@ function gup( name ){
 	else
 		return results[1];
 }
-var frank_param = gup( 'OS' );
-var ocupante_4 = gup( 'ocupante_4' );
-var puerta_4 = gup( 'puerta_4' );
-var trampa_4 = gup( 'trampa_4' );
-var ocupante_5 = gup( 'ocupante_5' );
-var puerta_5 = gup( 'puerta_5' );
-var trampa_5 = gup( 'trampa_5' );
+
+var ocupante_1 = exurl( 'ocupante_1' );
+var puerta_1 = exurl( 'puerta_1' );
+var trampa_1 = exurl( 'trampa_1');
+var paredes_1 = exurl( 'paredes_1' );
+var suelo_1 = exurl( 'suelo_1' );
+var puerta_secreta_1 = exurl( 'puerta_secreta' );
+var tesoro_1 = exurl( 'tesoro' );
 
 	document.open("text/text");
-	document.write("<h1>Se recibio el formulario enviado por <b>"+frank_param+"</b></h1>");
+	document.write("<h1>Se recibio el formulario enviado por <b></b></h1>");
 	document.write("<hr />");
 
 	document.write("<xmp><html></xmp>");

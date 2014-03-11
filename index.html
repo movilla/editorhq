@@ -8,14 +8,39 @@
 
 <body>
 	<nav>
-		<div id="panel" class="panel"></div>
+		<div id="panel_1" class="panel"></div>
+		<div id="panel_2" class="panel"></div>
+		<div id="panel_3" class="panel"></div>
+		<div id="panel_4" class="panel"></div>
+		<div id="panel_5" class="panel"></div>
+		<div id="panel_6" class="panel"></div>
+		<div id="panel_7" class="panel"></div>
+		<div id="panel_8" class="panel"></div>
+		<div id="panel_9" class="panel"></div>
+		<div id="panel_10" class="panel"></div>
+		<div id="panel_11" class="panel"></div>
+		<div id="panel_12" class="panel"></div>
+		<div id="panel_13" class="panel"></div>
+		<div id="panel_14" class="panel"></div>
+		<div id="panel_15" class="panel"></div>
+		<div id="panel_16" class="panel"></div>
+		<div id="panel_17" class="panel"></div>
+		<div id="panel_18" class="panel"></div>
+		<div id="panel_19" class="panel"></div>
+		<div id="panel_20" class="panel"></div>
+		<div id="panel_21" class="panel"></div>
+		<div id="panel_22" class="panel"></div>
+		<div id="panel_23" class="panel"></div>
+		<div id="panel_24" class="panel"></div>
+		<div id="panel_25" class="panel"></div>
+		<div id="panel_26" class="panel"></div>
 	</nav>
 	<div id="tablero">
 		<form method="get" name="formulario" target="_blank" id="formulario">
 			<div class="primera_fila">
 				<table rules="none">
 					<tr>
-						<td id="casilla_1" class="indice_casilla" onclick="mostrar_panel('panel', '1', 'casilla_1')">
+						<td id="casilla_1" class="indice_casilla" onclick="mostrar_panel('panel_1', '1', 'casilla_1')">
 							<a id="ocupante_1" class="ocupante" />
 							<a id="puerta_1" class="puerta" />
 							<a id="trampa_1" class="trampa" />
@@ -24,7 +49,7 @@
 							<a id="puerta_secreta_1" class="puerta_secreta" />
 							<a id="tesoro_1" class="tesoro" />
 						</td>
-						<td id="casilla_2" class="indice_casilla" onclick="mostrar_panel('panel','2', 'casilla_2')">
+						<td id="casilla_2" class="indice_casilla" onclick="mostrar_panel('panel_2','2', 'casilla_2')">
 							<a id="ocupante_2" class="ocupante" />
 							<a id="puerta_2" class="puerta" />
 							<a id="trampa_2" class="trampa" />
@@ -33,7 +58,7 @@
 							<a id="puerta_secreta_2" class="puerta_secreta" />
 							<a id="tesoro_2" class="tesoro" />
 						</td>
-						<td id="casilla_3" class="indice_casilla" onclick="mostrar_panel('panel', '3', 'casilla_3')">
+						<td id="casilla_3" class="indice_casilla" onclick="mostrar_panel('panel_3', '3', 'casilla_3')">
 							<a id="ocupante_3" class="ocupante" />
 							<a id="puerta_3" class="puerta" />
 							<a id="trampa_3" class="trampa" />
@@ -4572,12 +4597,12 @@
 					</tr>
 				</table>
 			</div>
-			<table border="1" style="display: none;">
+			<table id="herramientas" border="1">
 				<tr>
 					<td colspan="2" align="middle">
-						<input type="submit" onclick="this.form.action = 'tablero_test.html'" value="Muestra" />
-						<input value="Código" type="submit" onclick="this.form.action = 'resultado_codigo.html'"/>
-						<input type="submit" onclick="this.form.action = 'tablero_test.html'" value="Resultado" />
+						<input type="submit" onclick="this.form.action = 'tablero_test.html'" value="Muestra" style="display: none;" />
+						<input value="Contribuir" type="submit" onclick="this.form.action = 'resultado_codigo.html'"/>
+						<input style="display: none;" type="submit" onclick="this.form.action = 'tablero_test.html'" value="Resultado" />
 					</td>
 				</tr>
 			</table>
