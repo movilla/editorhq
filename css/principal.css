@@ -95,12 +95,19 @@ select {
 	background-color: #F5A9A9;
 }
 
-/* expeciones navegadores */
+/* excepciones navegadores */
 
 @-moz-document url-prefix() {
 	table {
 		margin-top: -2px;
 	}
+}
+
+#herramientas {
+	margin-top: 40px;
+	left: 140%;
+	position: absolute;
+	top: 0px;
 }
 
 /* enemigos */
