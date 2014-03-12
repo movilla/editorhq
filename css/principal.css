@@ -102,11 +102,56 @@ select {
 	}
 }
 
-#herramientas {
-	margin-top: 40px;
-	left: 140%;
-	position: absolute;
-	top: 0px;
+#lateral {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	right: -18.8em;
+	top: 0;
+	height: 100%;
+	position: fixed;
+	overflow-y: hidden;
+	background-color: #2b2b2b;
+	transition: right 0.4s ease-in-out;
+}
+
+#lateral:hover {
+	right: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+#lateral a:hover {
+	border-bottom: 1px solid #006F93;
+}
+
+#lateral-label {
+	display: inline-block;
+	background: #333;
+	position: fixed;
+	right: 0;
+	top: 0%;
+	opacity: 0.67;
+	z-index: 100;
+	font-size: 14px;
+	font-family: Helvetica, arial, freesans, clean, sans-serif;
+}
+
+#lateral-label a {
+	color: #FFF;
+	display: block;
+	width: 90px;
+	padding: 5px;
+	text-align: center;
+}
+
+#lateral-label:hover {
+	opacity: 1;
+}
+
+.contribuir {
+	margin-top: 50px;
 }
 
 /* enemigos */
