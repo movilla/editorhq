@@ -30,6 +30,13 @@ function vaciar_casilla(selCasilla) {
 	document.getElementById("suelo_"+selCasilla+"").className = 'suelo';
 	document.getElementById("puerta_secreta_"+selCasilla+"").className = 'puerta_secreta';
 	document.getElementById("tesoro_"+selCasilla+"").className = 'tesoro';
+	document.getElementById("ocupante_"+selCasilla+"bis").value = 'ocupante';
+	document.getElementById("puerta_"+selCasilla+"bis").value = 'puerta';
+	document.getElementById("trampa_"+selCasilla+"bis").value = 'trampa';
+	document.getElementById("paredes_"+selCasilla+"bis").value = 'paredes';
+	document.getElementById("suelo_"+selCasilla+"bis").value = 'suelo';
+	document.getElementById("puerta_secreta_"+selCasilla+"bis").value = 'puerta_secreta';
+	document.getElementById("tesoro_"+selCasilla+"bis").value = 'tesoro';
 }
 
 function cerrar_panel(divId) {
