@@ -3,7 +3,7 @@
 body {
 	width: 140%;
 	height: 100%;
-	margin: 10px 0 0 25%;
+	margin: 10px 0 0 20%;
 }
 
 .pasillo {
@@ -34,10 +34,6 @@ body {
 	width: 100%;
 }
 
-.panel_selec{
-
-}
-
 .panel {
 	position: fixed;
 	min-width: 125px;
@@ -46,41 +42,55 @@ body {
 	left: 0px;
 	top: 0px;
 	border-bottom: 1px;
-	/*background-color: #000;*/
-	/*background-image: url('https://diasp.org/assets/header-bg.png');*/
 }
 
+
 .cerrar {
-	font-size: x-large;
-	border: 2px solid;
+	font-size: inherit;
+	border: 1px solid #ccc;
 	position: absolute;
 	display: flex;
 	margin-top: 10%;
 	background-color: #FFF;
 	width: 15%;
-	padding: 5% 5% 5% 11%;
+	padding: 2% 0% 2% 10%;
+	margin-left: 7%;
+}
+
+.cerrar:hover {
+	background-color: #F8F8F8;
 }
 
 .vaciar {
-	font-size: x-large;
-	border: 2px solid;
+	font-size: inherit;
+	border: 1px solid #ccc;
 	position: absolute;
 	display: flex;
 	margin-top: 10%;
 	background-color: #FFF;
-	padding: 5% 15%;
-	right: 1px;
+	padding: 2% 7% 2% 10%;
+	left: 57%;
+	width: 30%;
+}
+
+.vaciar:hover {
+	background-color: #F8F8F8;
 }
 
 select {
-	font-size: x-large;
+	font-size: inherit;
+	margin: 15px 0 0 15px;
+	border: 1px solid #ccc;
 	width: 100%;
-	height: 10%;
-	border: 1px solid #000;
-	background-color: #FFF;
-	margin-top: 10%;
-	border: 2px solid;
-	padding: 5% 0 5% 0;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color: #fff;
+	padding: 5px 8px;
+	box-shadow: none;
+}
+
+select:hover {
+	background-color: #F8F8F8;
 }
 
 .indice_casilla {
@@ -88,6 +98,10 @@ select {
 	height: 50px;
 	box-shadow: inset 0px 0px 10px 1px #000;
 	outline: 1px solid #000;
+}
+
+.indice_casilla:hover {
+	background-color: #F5A9A9;
 }
 
 .seleccionada {
@@ -107,7 +121,7 @@ select {
 	padding: 0;
 	width: 200px;
 	right: -18.8em;
-	top: 0;
+	top: 10%;
 	height: 100%;
 	position: fixed;
 	overflow-y: hidden;
@@ -120,7 +134,6 @@ select {
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-
 
 #lateral a:hover {
 	border-bottom: 1px solid #006F93;
@@ -144,6 +157,7 @@ select {
 	width: 90px;
 	padding: 5px;
 	text-align: center;
+	text-decoration: none;
 }
 
 #lateral-label:hover {
