@@ -478,8 +478,8 @@ select:hover {
 	-moz-transform: scale(1.0) rotate(270deg);
 	-o-transform: scale(1.0) rotate(270deg);
 	transform: scale(1.0) rotate(270eg);
-	margin-left: 5px;
-	margin-top: 15px;
+	margin-left: -10px;
+	margin-top: 0px;
 }
 
 .laboratorio_oeste:before {
@@ -488,8 +488,8 @@ select:hover {
 	-moz-transform: scale(1.0) rotate(90deg);
 	-o-transform: scale(1.0) rotate(90deg);
 	transform : scale(1.0) rotate(90eg);
-	margin-left: 5px;
-	margin-top: 15px;
+	margin-left: -15px;
+	margin-top: 0px;
 }
 
 /* libreria */
@@ -502,20 +502,20 @@ select:hover {
 
 .libreria_sur:before {
 	content: url('./img/iconos/libreria.png');
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	margin-left: 30px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	margin-left: 2px;
 	margin-top: -15px;
 }
 
 .libreria_este:before {
 	content: url('./img/iconos/libreria.png');
-	-webkit-transform: scale(1.5) rotate(270deg);
-	-moz-transform: scale(1.5) rotate(270deg);
-	-o-transform: scale(1.5) rotate(270deg);
-	margin-left: -20px;
-	margin-top: 33px;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	margin-left: -30px;
+	margin-top: 15px;
 }
 
 /* armarios */
@@ -528,20 +528,20 @@ select:hover {
 
 .armario_este:before {
 	content: url('./img/iconos/armario.png');
-	-webkit-transform: scale(1.5) rotate(270deg);
-	-moz-transform: scale(1.5) rotate(270deg);
-	-o-transform: scale(1.5) rotate(270deg);
-	margin-left: -20px;
-	margin-top: 33px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	margin-left: -30px;
+	margin-top: 15px;
 }
 
 .armario_sur:before {
 	content: url('./img/iconos/armario.png');
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	margin-left: 30px;
-	margin-top: -15px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	margin-left: 3px;
+	margin-top: -17px;
 }
 
 /* chimenea */
@@ -554,41 +554,41 @@ select:hover {
 
 .chimenea_sur:before {
 	content: url('./img/iconos/chimenea.png');
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	-o-transform: scale(1.4);
-	margin-left: 26px;
-	margin-top: -14px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	margin-left: 1px;
+	margin-top: -15px;
 }
 
 .chimenea_norte:before {
 	content: url('./img/iconos/chimenea.png');
-	-webkit-transform: scale(1.4) rotate(180deg);
-	-moz-transform: scale(1.4) rotate(180deg);
-	-o-transform: scale(1.4) rotate(180deg);
-	transform: scale(1.4) rotate(180eg);
-	margin-left: 26px;
-	margin-top: -23px;
+	-webkit-transform: scale(1.0) rotate(180deg);
+	-moz-transform: scale(1.0) rotate(180deg);
+	-o-transform: scale(1.0) rotate(180deg);
+	transform: scale(1.0) rotate(180eg);
+	margin-left: 1px;
+	margin-top: -21px
 }
 
 .chimenea_este:before {
 	content: url('./img/iconos/chimenea.png');
-	-webkit-transform: scale(1.4) rotate(270deg);
-	-moz-transform: scale(1.4) rotate(270deg);
-	-o-transform: scale(1.4) rotate(270deg);
-	transform: scale(1.4) rotate(270eg);
-	margin-left: -20px;
-	margin-top: 30px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform: scale(1.0) rotate(270eg);
+	margin-left: -30px;
+	margin-top: 16px;
 }
 
 .chimenea_oeste:before {
 	content: url('./img/iconos/chimenea.png');
-	-webkit-transform: scale(1.4) rotate(90deg);
-	-moz-transform: scale(1.4) rotate(90deg);
-	-o-transform: scale(1.4) rotate(90deg);
-	transform: scale(1.4) rotate(90eg);
-	margin-left: -27px;
-	margin-top: 30px;
+	-webkit-transform: scale(1.0) rotate(90deg);
+	-moz-transform: scale(1.0) rotate(90deg);
+	-o-transform: scale(1.0) rotate(90deg);
+	transform: scale(1.0) rotate(90eg);
+	margin-left: -36px;
+	margin-top: 16px;
 }
 
 /* potro de torturas */
@@ -601,42 +601,41 @@ select:hover {
 
 .potro_sur:before {
 	content: url('./img/iconos/potro.png');
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	-o-transform: scale(1.4);
-	transform: scale(1.4);
-	margin-left: 17px;
-	margin-top: -5px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	margin-left: 1px;
+	margin-top: -15px;
 }
 
 .potro_norte:before {
 	content: url('./img/iconos/potro.png');
-	-webkit-transform: scale(1.4) rotate(180deg);
-	-moz-transform: scale(1.4) rotate(180deg);
-	-o-transform: scale(1.4) rotate(180deg);
-	transform: scale(1.4) rotate(180deg);
-	margin-left: 19px;
-	margin-top: -97px;
+	-webkit-transform: scale(1.0) rotate(180deg);
+	-moz-transform: scale(1.0) rotate(180deg);
+	-o-transform: scale(1.0) rotate(180deg);
+	transform: scale(1.0) rotate(180deg);
+	margin-left: 1px;
+	margin-top: -85px;
 }
 
 .potro_este:before {
 	content: url('./img/iconos/potro.png');
-	-webkit-transform: scale(1.4) rotate(270deg);
-	-moz-transform: scale(1.4) rotate(270deg);
-	-o-transform: scale(1.4) rotate(270deg);
-	transform: scale(1.4) rotate(270eg);
-	margin-left: 45px;
-	margin-top: -25px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform: scale(1.0) rotate(270eg);
+	margin-left: 20px;
+	margin-top: -33px;
 }
 
 .potro_oeste:before {
 	content: url('./img/iconos/potro.png');
-	-webkit-transform: scale(1.4) rotate(90deg);
-	-moz-transform: scale(1.4) rotate(90deg);
-	-o-transform: scale(1.4) rotate(90deg);
-	transform: scale(1.4) rotate(90eg);
+	-webkit-transform: scale(1.0) rotate(90deg);
+	-moz-transform: scale(1.0) rotate(90deg);
+	-o-transform: scale(1.0) rotate(90deg);
+	transform: scale(1.0) rotate(90eg);
 	margin-left: -50px;
-	margin-top: -25px;
+	margin-top: -33px
 }
 
 /* mesa de mago */
@@ -649,42 +648,42 @@ select:hover {
 
 .mesa_mago_sur:before {
 	content: url('./img/iconos/mesa_mago.png');
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	-o-transform: scale(1.4);
-	transform: scale(1.4);
-	margin-left: 30px;
-	margin-top: -3px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	margin-left: 3px;
+	margin-top: -15px;
 }
 
 .mesa_mago_norte:before {
 	content: url('./img/iconos/mesa_mago.png');
-	-webkit-transform: scale(1.4) rotate(180deg);
-	-moz-transform: scale(1.4) rotate(180deg);
-	-o-transform: scale(1.4) rotate(180deg);
-	transform: scale(1.4) rotate(180deg);
-	margin-left: 25px;
-	margin-top: -60px;
+	-webkit-transform: scale(1.0) rotate(180deg);
+	-moz-transform: scale(1.0) rotate(180deg);
+	-o-transform: scale(1.0) rotate(180deg);
+	transform: scale(1.0) rotate(180deg);
+	margin-left: 2px;
+	margin-top: -50px;
 }
 
 .mesa_mago_este:before {
 	content: url('./img/iconos/mesa_mago.png');
-	-webkit-transform: scale(1.4) rotate(270deg);
-	-moz-transform: scale(1.4) rotate(270deg);
-	-o-transform: scale(1.4) rotate(270deg);
-	transform: scale(1.4) rotate(270eg);
-	margin-left: 5px;
-	margin-top: 15px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform: scale(1.0) rotate(270eg);
+	margin-left: -12px;
+	margin-top: 2px;
 }
 
 .mesa_mago_oeste:before {
 	content: url('./img/iconos/mesa_mago.png');
-	-webkit-transform: scale(1.4) rotate(90deg);
-	-moz-transform: scale(1.4) rotate(90deg);
-	-o-transform: scale(1.4) rotate(90deg);
-	transform: scale(1.4) rotate(90eg);
-	margin-left: -45px;
-	margin-top: 15px;
+	-webkit-transform: scale(1.0) rotate(90deg);
+	-moz-transform: scale(1.0) rotate(90deg);
+	-o-transform: scale(1.0) rotate(90deg);
+	transform: scale(1.0) rotate(90eg);
+	margin-left: -52px;
+	margin-top: 2px;
 }
 
 /* tumba */
@@ -697,32 +696,32 @@ select:hover {
 
 .tumba_sur:before {
 	content: url('./img/iconos/tumba.png');
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	-o-transform: scale(1.4);
-	transform: scale(1.4);
-	margin-left: 17px;
-	margin-top: -5px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	margin-left: 1px;
+	margin-top: -15px;
 }
 
 .tumba_norte:before {
 	content: url('./img/iconos/tumba.png');
-	-webkit-transform: scale(1.4) rotate(180deg);
-	-moz-transform: scale(1.4) rotate(180deg);
-	-o-transform: scale(1.4) rotate(180deg);
-	transform: scale(1.4) rotate(180deg);
-	margin-left: 19px;
-	margin-top: -97px;
+	-webkit-transform: scale(1.0) rotate(180deg);
+	-moz-transform: scale(1.0) rotate(180deg);
+	-o-transform: scale(1.0) rotate(180deg);
+	transform: scale(1.0) rotate(180deg);
+	margin-left: 1px;
+	margin-top: -85px;
 }
 
 .tumba_este:before {
 	content: url('./img/iconos/tumba.png');
-	-webkit-transform: scale(1.4) rotate(270deg);
-	-moz-transform: scale(1.4) rotate(270deg);
-	-o-transform: scale(1.4) rotate(270deg);
-	transform: scale(1.4) rotate(270eg);
-	margin-left: 45px;
-	margin-top: -25px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform: scale(1.0) rotate(270eg);
+	margin-left: 20px;
+	margin-top: -33px;
 }
 
 .tumba_oeste:before {
@@ -730,12 +729,12 @@ select:hover {
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
-	-webkit-transform: scale(1.4) rotate(90deg);
-	-moz-transform: scale(1.4) rotate(90deg);
-	-o-transform: scale(1.4) rotate(90deg);
-	transform: scale(1.4) rotate(90eg);
+	-webkit-transform: scale(1.0) rotate(90deg);
+	-moz-transform: scale(1.0) rotate(90deg);
+	-o-transform: scale(1.0) rotate(90deg);
+	transform: scale(1.0) rotate(90eg);
 	margin-left: -50px;
-	margin-top: -25px;
+	margin-top: -33px;
 }
 
 /* mesa */
@@ -748,22 +747,21 @@ select:hover {
 
 .mesa_sur:before {
 	content: url('./img/iconos/mesa.png');
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	-o-transform: scale(1.4);
-	transform: scale(1.4);
-	margin-left: 30px;
-	margin-top: -3px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	margin-left: 1px;
+	margin-top: -15px;
 }
 
 .mesa_este:before {
 	content: url('./img/iconos/mesa.png');
-	-webkit-transform: scale(1.4) rotate(270deg);
-	-moz-transform: scale(1.4) rotate(270deg);
-	-o-transform: scale(1.4) rotate(270deg);
-	transform: scale(1.4) rotate(270eg);
-	margin-left: 5px;
-	margin-top: 15px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform: scale(1.0) rotate(270eg);
+	margin-left: -10px;
+	margin-top: 3px;
 }
 
 .cofre_sur, .cofre_este {
@@ -774,22 +772,22 @@ select:hover {
 
 .cofre_sur:before {
 	content: url('./img/iconos/cofre.png');
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
-	margin-left: 10px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	margin-left: 0px;
 	margin-top: -10px;
 }
 
 .cofre_este:before {
 	content: url('./img/iconos/cofre.png');
-	-webkit-transform: scale(1.5) rotate(270deg);
-	-moz-transform: scale(1.5) rotate(270deg);
-	-o-transform: scale(1.5) rotate(270deg);
-	transform: scale(1.5) rotate(270eg);
-	margin-left: 10px;
-	margin-top: -14px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform: scale(1.0) rotate(270eg);
+	margin-left: 0px;
+	margin-top: -15px;
 }
 
 .trono_sur, .trono_este, .trono_norte, .trono_oeste {
@@ -800,41 +798,41 @@ select:hover {
 
 .trono_sur:before {
 	content: url('./img/iconos/trono.png');
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
-	margin-left: 10px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	margin-left: 1px;
 	margin-top: -15px;
 }
 
 .trono_norte:before {
 	content: url('./img/iconos/trono.png');
-	-webkit-transform: scale(1.5) rotate(180deg);
-	-moz-transform: scale(1.5) rotate(180deg);
-	-o-transform: scale(1.5) rotate(180deg);
-	transform: scale(1.5) rotate(180eg);
-	margin-left: 10px;
+	-webkit-transform: scale(1.0) rotate(180deg);
+	-moz-transform: scale(1.0) rotate(180deg);
+	-o-transform: scale(1.0) rotate(180deg);
+	transform: scale(1.0) rotate(180eg);
+	margin-left: 0px;
 	margin-top: -20px;
 }
 
 .trono_este:before {
 	content: url('./img/iconos/trono.png');
-	-webkit-transform: scale(1.5) rotate(270deg);
-	-moz-transform: scale(1.5) rotate(270deg);
-	-o-transform: scale(1.5) rotate(270deg);
-	transform: scale(1.5) rotate(270eg);
-	margin-left: 15px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform: scale(1.0) rotate(270eg);
+	margin-left: 4px;
 	margin-top: -17px;
 }
 
 .trono_oeste:before {
 	content: url('./img/iconos/trono.png');
-	-webkit-transform: scale(1.5) rotate(90deg);
-	-moz-transform: scale(1.5) rotate(90deg);
-	-o-transform: scale(1.5) rotate(90deg);
-	transform: scale(1.5) rotate(90eg);
-	margin-left: 7px;
+	-webkit-transform: scale(1.0) rotate(90deg);
+	-moz-transform: scale(1.0) rotate(90deg);
+	-o-transform: scale(1.0) rotate(90deg);
+	transform: scale(1.0) rotate(90eg);
+	margin-left: -1px;
 	margin-top: -17px;
 }
 
@@ -848,22 +846,22 @@ select:hover {
 
 .armero_sur:before {
 	content: url('./img/iconos/armero.png');
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
-	margin-left: 25px;
-	margin-top: -15px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	margin-left: 2px;
+	margin-top: -17px;
 }
 
 .armero_este:before {
 	content: url('./img/iconos/armero.png');
-	-webkit-transform: scale(1.5) rotate(270deg);
-	-moz-transform: scale(1.5) rotate(270deg);
-	-o-transform: scale(1.5) rotate(270deg);
-	transform : scale(1.5) rotate(270eg);
-	margin-left: -22px;
-	margin-top: 35px;
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	transform : scale(1.0) rotate(270eg);
+	margin-left: -31px;
+	margin-top: 15px;
 }
 
 /* trampas */
@@ -879,40 +877,36 @@ select:hover {
 .lanza, .abismo, .piedra_caida {
 	display: flex;
 	position: absolute;
-	margin-left: 2px;
-	margin-top: -23px;
 	opacity: 0;
 	z-index: 1;
 }
 
 .lanza:before {
 	content: url('./img/iconos/lanza.png');
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	-o-transform: scale(0.9);
-	transform: scale(0.9);
-	margin-left: 0px;
-	margin-top: -4px;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	-o-transform: scale(0.6);
+	margin-left: -8px;
+	margin-top: -27px;
 }
 
 .abismo:before {
 	content: url('./img/iconos/abismo.png');
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
-	margin-left: 12px;
-	margin-top: 10px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	margin-left: 4px;
+	margin-top: -15px;
 }
 
 .piedra_caida:before {
 	content: url('./img/iconos/piedra_caida.png');
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	-o-transform: scale(1.4);
-	transform: scale(1.4);
-	margin-left: 6px;
-	margin-top: 7px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	margin-left: -1px;
+	margin-top: -17px;
 }
 
 /* paredes */
@@ -930,20 +924,20 @@ select:hover {
 
 .arriba {
 	border-top: 5px solid;
-	width: 52px;
+	width: 35px;
 	height: 1px;
 	position: absolute;
-	margin-top: -27px;
+	margin-top: -19px;
 	border-color: #000;
 	margin-left: -1px;
 }
 
 .abajo {
 	border-top: 5px solid;
-	width: 52px;
+	width: 35px;
 	height: 1px;
 	position: absolute;
-	margin-top: 22px;
+	margin-top: 15px;
 	border-color: #000;
 	margin-left: -1px;
 }
@@ -951,21 +945,21 @@ select:hover {
 .izquierda {
 	border-left: 5px solid;
 	width: 1px;
-	height: 52px;
+	height: 35px;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -17px;
 	border-color: #000;
-	margin-left: -2px;
+	margin-left: -4px;
 }
 
 .derecha {
 	border-left: 5px solid;
 	width: 1px;
-	height: 52px;
+	height: 35px;
 	position: absolute;
-	margin-top: -26px;
+	margin-top: -17px;
 	border-color: #000;
-	margin-left: 47px;
+	margin-left: 30px;
 }
 
 .arriba_abajo {
