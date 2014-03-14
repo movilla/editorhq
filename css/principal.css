@@ -137,10 +137,6 @@ select:hover {
 	overflow-y: auto;
 }
 
-#lateral a:hover {
-	border-bottom: 1px solid #006F93;
-}
-
 #lateral-label {
 	display: inline-block;
 	background: #333;
