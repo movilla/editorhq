@@ -47,7 +47,7 @@ body {
 
 .cerrar {
 	font-size: inherit;
-	border: 1px solid #AAA;
+	border: 1px solid #000;
 	position: absolute;
 	display: flex;
 	margin-top: 10%;
@@ -64,7 +64,7 @@ body {
 
 .vaciar {
 	font-size: inherit;
-	border: 1px solid #AAA;
+	border: 1px solid #000;
 	position: absolute;
 	display: flex;
 	margin-top: 10%;
@@ -82,7 +82,7 @@ body {
 select {
 	font-size: inherit;
 	margin: 15px 0 0 15px;
-	border: 1px solid #AAA;
+	border: 1px solid #000;
 	width: 100%;
 	border-radius: 3px;
 	overflow: hidden;
