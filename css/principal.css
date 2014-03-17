@@ -921,7 +921,7 @@ select:hover {
 
 .arriba {
 	border-top: 5px solid;
-	width: 33px;
+	width: 36px;
 	height: 1px;
 	position: absolute;
 	margin-top: -19px;
@@ -995,12 +995,12 @@ select:hover {
 .arriba_derecha {
 	border-right: 5px solid;
 	border-top: 5px solid;
-	width: 48px;
-	height: 48px;
+	width: 32px;
+	height: 32px;
 	position: absolute;
-	margin-top: -27px;
+	margin-top: -20px;
 	border-color: #000;
-	margin-left: -1px;
+	margin-left: -2px;
 }
 
 .abajo_izquierda {
