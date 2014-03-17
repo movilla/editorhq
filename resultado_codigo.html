@@ -430,22 +430,6 @@ if (suelo_26 != 'suelo' & suelo_26 != '') {document.write("<pre>document.getElem
 if (puerta_secreta_26 != 'puerta_secreta' & puerta_secreta_26 != '') {document.write("<pre>document.getElementById('puerta_secreta_26').setAttribute('class', '"+puerta_secreta_26+"');</pre>");}
 if (tesoro_26 != 'tesoro' & tesoro_26 != '') {document.write("<pre>document.getElementById('tesoro_26').setAttribute('class', '"+tesoro_26+"');</pre>");}
 
-<!DOCTYPE html>
-<html lang="es">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script>
-
-function exurl( name ){
-	var regexS = "[\\?&]"+name+"=([^&#]*)";
-	var regex = new RegExp ( regexS );
-	var tmpURL = window.location.href;
-	var results = regex.exec( tmpURL );
-	if( results == null )
-		return"";
-	else
-		return results[1];
-}
-
 var ocupante_1a = exurl( 'ocupante_1a' );
 var puerta_1a = exurl( 'puerta_1a' );
 var trampa_1a = exurl( 'trampa_1a');
