@@ -985,9 +985,9 @@ select:hover {
 	border-left: 5px solid;
 	border-top: 5px solid;
 	width: 33px;
-	height: 33px;
+	height: 32px;
 	position: absolute;
-	margin-top: -20px;
+	margin-top: -19px;
 	border-color: #000;
 	margin-left: -4px;
 }
@@ -998,7 +998,7 @@ select:hover {
 	width: 32px;
 	height: 32px;
 	position: absolute;
-	margin-top: -20px;
+	margin-top: -19px;
 	border-color: #000;
 	margin-left: -2px;
 }
@@ -1018,7 +1018,7 @@ select:hover {
 	border-right: 5px solid;
 	border-bottom: 5px solid;
 	width: 32px;
-	height: 31px;
+	height: 32px;
 	position: absolute;
 	margin-top: -17px;
 	border-color: #000;
