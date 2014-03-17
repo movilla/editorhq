@@ -47,7 +47,7 @@ body {
 
 .cerrar {
 	font-size: inherit;
-	border: 1px solid #ccc;
+	border: 1px solid #AAA;
 	position: absolute;
 	display: flex;
 	margin-top: 10%;
@@ -64,7 +64,7 @@ body {
 
 .vaciar {
 	font-size: inherit;
-	border: 1px solid #ccc;
+	border: 1px solid #AAA;
 	position: absolute;
 	display: flex;
 	margin-top: 10%;
@@ -82,11 +82,11 @@ body {
 select {
 	font-size: inherit;
 	margin: 15px 0 0 15px;
-	border: 1px solid #ccc;
+	border: 1px solid #AAA;
 	width: 100%;
 	border-radius: 3px;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: #FFF;
 	padding: 5px 8px;
 	box-shadow: none;
 }
@@ -98,7 +98,6 @@ select:hover {
 .indice_casilla {
 	width: 32px;
 	height: 32px;
-	box-shadow: inset 0px 0px 7px 1px #AAA;
 	outline: 1px solid #000;
 }
 
@@ -115,6 +114,11 @@ select:hover {
 @-moz-document url-prefix() {
 	table {
 		margin-top: -2px;
+	}
+	select {
+		-moz-appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
 	}
 }
 
@@ -408,6 +412,7 @@ select:hover {
 	opacity: 0;
 	display: flex;
 	z-index: 2;
+	position: absolute;
 	-moz-transform: scale(0.65);
 	-webkit-transform: scale(0.65);
 	-o-transform: scale(0.65);
@@ -415,30 +420,26 @@ select:hover {
 
 .puerta_sur:before {
 	content: url('./img/iconos/puerta_sur.png');
-	position: absolute;
-	margin-top: 11px;
-	margin-left: -17px;
+	margin-top: 1px;
+	margin-left: -20px;
 }
 
 .puerta_norte:before {
 	content: url('./img/iconos/puerta_sur.png');
-	position: absolute;
 	margin-top: -42px;
-	margin-left: -17px;
+	margin-left: -20px;
 }
 
 .puerta_este:before {
 	content: url('./img/iconos/puerta_este.png');
-	position: absolute;
-	margin-top: -35px;
-	margin-left: 27px;
+	margin-top: -40px;
+	margin-left: 22px;
 }
 
 .puerta_oeste:before {
 	content: url('./img/iconos/puerta_este.png');
-	position: absolute;
-	margin-top: -35px;
-	margin-left: -26px;
+	margin-top: -40px;
+	margin-left: -19px;
 }
 
 /* mobiliario */
