@@ -89,6 +89,7 @@ select {
 	background-color: #FFF;
 	padding: 5px 8px;
 	box-shadow: none;
+	color: #000;
 }
 
 select:hover {
