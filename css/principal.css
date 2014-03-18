@@ -423,10 +423,10 @@ select:hover {
 	margin-left: -20px;
 }
 
-.puerta_este:after {
+.puerta_este:before {
 	content: url('./img/iconos/puerta_este.png');
-	margin-top: -4px;
 	margin-left: 22px;
+	margin-top: -40px;
 }
 
 .puerta_oeste:before {
