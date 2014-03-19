@@ -401,7 +401,16 @@ select:hover {
 
 /* puertas */
 
-.puerta_sur, .puerta_norte, .puerta_este, .puerta_oeste, .puerta_este_oeste, .puerta_sur_norte {
+.puerta_sur,
+.puerta_norte,
+.puerta_este,
+.puerta_oeste,
+.puerta_este_oeste,
+.puerta_sur_norte,
+.puerta_norte_oeste,
+.puerta_norte_este,
+.puerta_sur_este,
+.puerta_sur_oeste {
 	opacity: 0;
 	display: flex;
 	z-index: 2;
@@ -459,6 +468,54 @@ select:hover {
 	margin-left: -63px;
 }
 
+.puerta_norte_oeste:before {
+	content: url('./img/iconos/puerta_sur.png');
+	margin-top: -48px;
+	margin-left: -11px;
+}
+
+.puerta_norte_oeste:after {
+	content: url('./img/iconos/puerta_este.png');
+	margin-top: -41px;
+	margin-left: -73px;
+}
+
+.puerta_norte_este:before {
+	content: url('./img/iconos/puerta_sur.png');
+	margin-top: -48px;
+	margin-left: -24px;
+}
+
+.puerta_norte_este:after {
+	content: url('./img/iconos/puerta_este.png');
+	margin-left: -19px;
+	margin-top: -40px;
+}
+
+.puerta_sur_este:before {
+	content: url('./img/iconos/puerta_sur.png');
+	margin-top: 1px;
+	margin-left: -21px;
+}
+
+.puerta_sur_este:after {
+	content: url('./img/iconos/puerta_este.png');
+	margin-left: -22px;
+	margin-top: -40px;
+}
+
+.puerta_sur_oeste:before {
+	content: url('./img/iconos/puerta_sur.png');
+	margin-top: 1px;
+	margin-left: -11px;
+}
+
+.puerta_sur_oeste:after {
+	content: url('./img/iconos/puerta_este.png');
+	margin-top: -41px;
+	margin-left: -73px;
+}
+
 /* mobiliario */
 
 .laboratorio_sur, .laboratorio_norte, .laboratorio_este, .laboratorio_oeste {
@@ -481,7 +538,6 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(180deg);
 	-moz-transform: scale(1.0) rotate(180deg);
 	-o-transform: scale(1.0) rotate(180deg);
-	transform: scale(1.0) rotate(180deg);
 	margin-left: 5px;
 	margin-top: -53px
 }
@@ -491,7 +547,6 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(270deg);
 	-moz-transform: scale(1.0) rotate(270deg);
 	-o-transform: scale(1.0) rotate(270deg);
-	transform: scale(1.0) rotate(270eg);
 	margin-left: -10px;
 	margin-top: 0px;
 }
@@ -501,7 +556,6 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(90deg);
 	-moz-transform: scale(1.0) rotate(90deg);
 	-o-transform: scale(1.0) rotate(90deg);
-	transform : scale(1.0) rotate(90eg);
 	margin-left: -15px;
 	margin-top: 0px;
 }
@@ -1042,6 +1096,33 @@ select:hover {
 	margin-left: -2px;
 }
 
+/* escaleras */
+
+.escaleras_norte, .escaleras_sur {
+	display: flex;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+.escaleras_norte:before {
+	content: url('./img/iconos/escaleras.png');
+	-webkit-transform: scale(0.65);
+	-moz-transform: scale(0.67);
+	-o-transform: scale(0.65);
+	margin-left: -20px;
+	margin-top: -37px;
+}
+
+.escaleras_sur:before {
+	content: url('./img/iconos/escaleras.png');
+	-webkit-transform: scale(0.64) rotate(180deg);
+	-moz-transform: scale(0.68) rotate(180deg);
+	-o-transform: scale(0.65) rotate(180deg);
+	margin-left: -20px;
+	margin-top: -40px;
+}
+
 /* suelo */
 
 .gris, .gris_oscuro, .violeta_oscuro, .azul_oscuro {
@@ -1072,10 +1153,20 @@ select:hover {
 
 /* puertas secretas */
 
-.puerta_secreta_norte, .puerta_secreta_sur, .puerta_secreta_este, .puerta_secreta_oeste, .puerta_secreta_norte_sur, .puerta_secreta_este_oeste {
+.puerta_secreta_norte,
+.puerta_secreta_sur,
+.puerta_secreta_este,
+.puerta_secreta_oeste,
+.puerta_secreta_norte_sur,
+.puerta_secreta_este_oeste,
+.puerta_secreta_norte_oeste,
+.puerta_secreta_norte_este,
+.puerta_secreta_sur_oeste,
+.puerta_secreta_sur_este {
 	opacity: 0;
 	display: flex;
 	position: absolute;
+	z-index: 2;
 }
 
 .puerta_secreta_norte:before {
@@ -1083,7 +1174,6 @@ select:hover {
 	-webkit-transform: scale(1.0);
 	-moz-transform: scale(1.0);
 	-o-transform: scale(1.0);
-	transform: scale(1.0);
 	margin-top: -17px;
 	margin-left: 3px;
 }
@@ -1093,8 +1183,7 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(180deg);
 	-moz-transform: scale(1.0) rotate(180deg);
 	-o-transform: scale(1.0) rotate(180deg);
-	transform: scale(1.0) rotate(180eg);
-	margin-top: -6px;
+	margin-top: -5px;
 	margin-left: 4px;
 }
 
@@ -1103,8 +1192,7 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(90deg);
 	-moz-transform: scale(1.0) rotate(90deg);
 	-o-transform: scale(1.0) rotate(90deg);
-	transform: scale(1.0) rotate(90eg);
-	margin-left: 8px;
+	margin-left: 9px;
 	margin-top: -10px;
 }
 
@@ -1113,8 +1201,7 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(270deg);
 	-moz-transform: scale(1.0) rotate(270deg);
 	-o-transform: scale(1.0) rotate(270deg);
-	transform: scale(1.0) rotate(270deg);
-	margin-left: -2px;
+	margin-left: -3px;
 	margin-top: -12px;
 }
 
@@ -1123,7 +1210,6 @@ select:hover {
 	-webkit-transform: scale(1.0);
 	-moz-transform: scale(1.0);
 	-o-transform: scale(1.0);
-	transform: scale(1.0);
 	margin-top: -17px;
 	margin-left: 3px;
 }
@@ -1133,8 +1219,7 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(180deg);
 	-moz-transform: scale(1.0) rotate(180deg);
 	-o-transform: scale(1.0) rotate(180deg);
-	transform: scale(1.0) rotate(180eg);
-	margin-top: -6px;
+	margin-top: -5px;
 	margin-left: -25px;
 }
 
@@ -1143,8 +1228,7 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(90deg);
 	-moz-transform: scale(1.0) rotate(90deg);
 	-o-transform: scale(1.0) rotate(90deg);
-	transform: scale(1.0) rotate(90eg);
-	margin-left: 8px;
+	margin-left: 9px;
 	margin-top: -10px;
 }
 
@@ -1153,9 +1237,85 @@ select:hover {
 	-webkit-transform: scale(1.0) rotate(270deg);
 	-moz-transform: scale(1.0) rotate(270deg);
 	-o-transform: scale(1.0) rotate(270deg);
-	margin-left: -36px;
+	margin-left: -37px;
 	margin-top: -12px;
 }
+
+.puerta_secreta_norte_oeste:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	margin-top: -17px;
+	margin-left: 7px;
+}
+
+.puerta_secreta_norte_oeste:after {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	margin-left: -36px;
+	margin-top: -7px;
+}
+
+.puerta_secreta_norte_este:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	margin-top: -17px;
+	margin-left: -1px;
+}
+
+.puerta_secreta_norte_este:after {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0) rotate(90deg);
+	-moz-transform: scale(1.0) rotate(90deg);
+	-o-transform: scale(1.0) rotate(90deg);
+	margin-left: -16px;
+	margin-top: -6px;
+
+}
+
+.puerta_secreta_sur_oeste:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0) rotate(180deg);
+	-moz-transform: scale(1.0) rotate(180deg);
+	-o-transform: scale(1.0) rotate(180deg);
+	margin-top: -5px;
+	margin-left: 7px;
+}
+
+.puerta_secreta_sur_oeste:after {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0) rotate(270deg);
+	-moz-transform: scale(1.0) rotate(270deg);
+	-o-transform: scale(1.0) rotate(270deg);
+	margin-left: -28px;
+	margin-top: -23px;
+}
+
+.puerta_secreta_sur_este:before {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0) rotate(180deg);
+	-moz-transform: scale(1.0) rotate(180deg);
+	-o-transform: scale(1.0) rotate(180deg);
+	margin-top: -5px;
+	margin-left: -1px;
+}
+
+.puerta_secreta_sur_este:after {
+	content: url('./img/iconos/puerta_secreta.png');
+	-webkit-transform: scale(1.0) rotate(90deg);
+	-moz-transform: scale(1.0) rotate(90deg);
+	-o-transform: scale(1.0) rotate(90deg);
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+/* números */
 
 .numero_1, .numero_2, .numero_3, .numero_4, .numero_5, .numero_6, .numero_7, .numero_8, .numero_9 {
 	display: flex;
