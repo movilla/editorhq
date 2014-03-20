@@ -132,8 +132,9 @@ select:hover {
 	height: 100%;
 	position: fixed;
 	overflow-y: hidden;
-	background-color: #2b2b2b;
+	background-color: #AAA;
 	transition: right 0.4s ease-in-out;
+	border-radius: 5px 0px 0px 5px;
 }
 
 #lateral:hover {
@@ -169,7 +170,9 @@ select:hover {
 }
 
 .contribuir {
-	margin-top: 50px;
+	margin: 50px 10px 0 10px;
+	width: 90%;
+	height: inherit;
 }
 
 /* enemigos */
