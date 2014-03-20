@@ -5068,8 +5068,9 @@
 			<div id="lateral">
 				<h3 id="lateral-label"><a href="javascript:void(0);">Tabla de Herramientas</a></h3>
 					<div id="botones">
+						<select class="tablero" name="tablero" id="tableros" onChange="cambiar_tablero();"><option value="tableros" selected>Tipos de tableros</option><option value="tablero_basico">Tablero original</option></select>
 						<input type="submit" onclick="this.form.action = 'tablero_test.html'" value="Muestra" style="display: none;" />
-						<input class="contribuir" title="Genera un código para tu tablero y comprartelo" value="Generar código del tablero" type="submit" onclick="this.form.action = 'resultado_codigo.html'"/>
+						<input class="contribuir" title="Genera el código de tu tablero y compártelo" value="Generar código tablero" type="submit" onclick="this.form.action = 'resultado_codigo.html'"/>
 						<input style="display: none;" type="submit" onclick="this.form.action = 'tablero_test.html'" value="Resultado" />
 					</div>
 			</div>

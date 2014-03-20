@@ -96,6 +96,11 @@ select:hover {
 	background-color: #EEE;
 }
 
+.tablero {
+	width: 90%;
+	margin: 10px 0px 0px 10px;
+}
+
 .indice_casilla {
 	width: 32px;
 	height: 32px;
@@ -172,7 +177,7 @@ select:hover {
 .contribuir {
 	margin: 50px 10px 0 10px;
 	width: 90%;
-	height: inherit;
+	height: auto;
 }
 
 /* enemigos */
@@ -993,6 +998,36 @@ select:hover {
 	z-index: 1;
 }
 
+
+@-moz-document url-prefix() {
+	.arriba_derecha {
+		margin-left: -1px !important;
+		margin-top: -21px !important;
+		height: 33px !important;
+	}
+	.derecha {
+		margin-left: 31px !important;
+	}
+	.abajo_derecha {
+		margin-left: -1px !important;
+	}
+	.izquierda {
+		margin-left: -5px !important;
+	}
+	.abajo_izquierda {
+		margin-left: -5px !important;
+		width: 33px !important;
+	}
+	.arriba_izquierda {
+		margin-left: -5px !important;
+		margin-top: -21px !important;
+		height: 33px !important;
+	}
+	.arriba {
+		margin-top: -21px !important;
+	}
+}
+
 .arriba {
 	border-top: 5px solid;
 	width: 36px;
@@ -1031,6 +1066,7 @@ select:hover {
 	margin-top: -17px;
 	border-color: #000;
 	margin-left: 30px;
+	-moz-margin-start: 
 }
 
 .arriba_abajo {
