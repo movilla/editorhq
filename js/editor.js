@@ -52,6 +52,8 @@ function vaciar_casilla(selCasilla) {
 
 function cerrar_panel(divId) {
 	document.getElementById(divId).style.visibility = 'hidden';
+	var casilla_seleccionada = document.getElementsByClassName('indice_casilla seleccionada')[0];
+	casilla_seleccionada.className = 'indice_casilla';
 }
 
 function cambiar_imagen(divIdSelect, divIdCasilla) {
