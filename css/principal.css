@@ -108,11 +108,11 @@ select:hover {
 }
 
 .indice_casilla:hover {
-	background-color: #F5A9A9;
+	box-shadow: 0 0 10px 5px #AAA
 }
 
 .seleccionada {
-	background-color: #F5A9A9;
+	box-shadow: 0 0 10px 5px #AAA
 }
 
 /* excepciones navegadores */
@@ -178,6 +178,12 @@ select:hover {
 	margin: 50px 10px 0 10px;
 	width: 90%;
 	height: auto;
+}
+
+.paleta {
+	text-align: center;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
 }
 
 /* enemigos */

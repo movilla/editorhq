@@ -20,6 +20,17 @@ function mostrar_panel(divId, selCasilla, Casilla) {
 	casilla.innerHTML +="<select name=\"puerta_secreta_"+selCasilla+"\" id=\"puerta_secreta_"+selCasilla+"bis\" form=\"formulario\" onChange=\"cambiar_imagen('puerta_secreta_"+selCasilla+"bis', 'puerta_secreta_"+selCasilla+"')\"><option value=\"puerta_secreta\">Trampilla</option><option value=\"puerta_secreta\">Borrar</option><option value=\"puerta_secreta_norte\">Trampilla ↑</option><option value=\"puerta_secreta_sur\">Trampilla ↓</option><option value=\"puerta_secreta_este\">Trampilla →</option><option value=\"puerta_secreta_oeste\">Trampilla ←</option><option value=\"puerta_secreta_norte_sur\">Trampilla ↑ ↓</option><option value=\"puerta_secreta_este_oeste\">Trampilla → ←</option><option value=\"puerta_secreta_norte_oeste\">Trampilla ↑ ←</option><option value=\"puerta_secreta_norte_este\">Trampilla ↑ →</option><option value=\"puerta_secreta_sur_oeste\">Trampilla ↓ ←</option><option value=\"puerta_secreta_sur_este\">Trampilla ↓ →</option></select>";
 	casilla.innerHTML +="<select name=\"tesoro_"+selCasilla+"\" id=\"tesoro_"+selCasilla+"bis\" form=\"formulario\" onChange=\"cambiar_imagen('tesoro_"+selCasilla+"bis', 'tesoro_"+selCasilla+"')\"><option value=\"tesoro\">Tesoro</option><option value=\"tesoro\">Borrar</option><option value=\"numero_1\">1</option><option value=\"numero_2\">2</option><option value=\"numero_3\">3</option><option value=\"numero_4\">4</option><option value=\"numero_5\">5</option><option value=\"numero_6\">6</option><option value=\"numero_7\">7</option><option value=\"numero_8\">8</option><option value=\"numero_9\">9</option><option value=\"numero_10\">10</option><option value=\"numero_11\">11</option></select></td></tr><tr><td><a id=\"cerrar\" class=\"cerrar\" title=\"Ocultar panel\" onclick=\"cerrar_panel('"+divId+"')\">X</a></td><td><a id=\"vaciar\" class=\"vaciar\" title=\"Vaciar la casilla\" onclick=\"vaciar_casilla('"+selCasilla+"')\">Vaciar</a></td></tr>";
 	}
+	var gris = document.getElementById("gris").checked;
+	if (gris) {
+		document.getElementById("suelo_"+selCasilla+"").setAttribute('class', 'gris');
+		document.getElementById("suelo_"+selCasilla+"bis").value = 'gris';
+	}
+	var gris_oscuro = document.getElementById("gris_oscuro").checked;
+	if (gris_oscuro) {
+		document.getElementById("suelo_"+selCasilla+"").setAttribute('class', 'gris_oscuro');
+		document.getElementById("suelo_"+selCasilla+"bis").value = 'gris_oscuro';
+	}
+	
 }
 
 function vaciar_casilla(selCasilla) {
@@ -265,4 +276,8 @@ document.getElementById('paredes_23q').setAttribute('class', 'abajo');
 document.getElementById('paredes_24q').setAttribute('class', 'abajo');
 document.getElementById('paredes_25q').setAttribute('class', 'abajo_derecha');
 		}
+}
+
+function test() {
+	alert('funciona');
 }
