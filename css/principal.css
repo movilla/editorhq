@@ -108,11 +108,70 @@ select:hover {
 }
 
 .indice_casilla:hover {
-	box-shadow: 0 0 10px 5px #AAA
+	box-shadow: inset 0px 0px 7px red;
 }
 
 .seleccionada {
-	box-shadow: 0 0 10px 5px #AAA
+	box-shadow: inset 0px 0px 7px red;
+}
+
+input[type=radio] {
+		display:none;
+}
+
+input[type=radio] + label {
+		display:inline-block;
+		margin:-2px;
+		width: 24px;
+		height: 24px;
+		margin-bottom: 0;
+		line-height: 26px;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 1px solid #000;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+input[type=radio]:checked + label {
+		border: 1px solid red;
+}
+
+#botones_paleta {
+	text-align: center;
+}
+
+.color_sin_color {
+	background-image: url(./img/editor/transparente.png);
+	color: #000;
+	font-family: sans-serif;
+	font-size: xx-large;
+}
+
+.color_blanco {
+	background-color: #FFF;
+	color: #FFF;
+}
+
+.color_gris {
+	background-color: lightgray;
+	color: lightgray;
+}
+
+.color_gris_oscuro {
+	background-color: DimGray;
+	color: DimGray;
+}
+
+.color_violeta_oscuro {
+	background-color: DarkOrchid;
+	color: DarkOrchid;
+}
+
+.color_azul_oscuro {
+	background-color: DarkBlue !important;
+	color: DarkBlue !important;
 }
 
 /* excepciones navegadores */
@@ -137,9 +196,10 @@ select:hover {
 	height: 100%;
 	position: fixed;
 	overflow-y: hidden;
-	background-color: #AAA;
+	background-color: #FFF;
 	transition: right 0.4s ease-in-out;
 	border-radius: 5px 0px 0px 5px;
+	border: 1px solid #000;
 }
 
 #lateral:hover {
