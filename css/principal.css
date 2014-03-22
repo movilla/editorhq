@@ -130,8 +130,6 @@ input[type=radio] + label {
 		vertical-align: middle;
 		cursor: pointer;
 		border: 1px solid #000;
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
-		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 input[type=radio]:checked + label {
