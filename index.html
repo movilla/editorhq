@@ -5075,9 +5075,20 @@
 					</div>
 					<div id=colores>
 						<h3 class="paleta"> Paleta </h3>
-						<input type="radio" name="paleta" id="blanco" value="blanco" checked> Sin color<br>
-						<input type="radio" name="paleta" id="gris" value="gris"> Gris<br>
-						<input type="radio" name="paleta" id="gris_oscuro" value="gris_oscuro"> Gris oscuro<br>
+							<div id="botones_paleta">
+								<input type="radio" name="paleta" id="sin_color" value="sin_color" checked>
+									<label class="color_sin_color" for="sin_color"></label>
+								<input type="radio" name="paleta" id="suelo" value="suelo">
+									<label class="color_blanco" for="suelo">X</label>
+								<input type="radio" name="paleta" id="gris" value="gris">
+									<label for="gris" class="color_gris">X</label>
+								<input type="radio" name="paleta" id="gris_oscuro" value="gris_oscuro">
+									<label class="color_gris_oscuro" for="gris_oscuro">X</label>
+								<input type="radio" name="paleta" id="violeta_oscuro" value="violeta_oscuro">
+									<label class="color_violeta_oscuro" for="violeta_oscuro">X</label>
+								<input type="radio" name="paleta" id="azul_oscuro" value="azul_oscuro">
+									<label class="color_azul_oscuro" for="azul_oscuro">X</label>
+							</div>
 					</div>
 			</div>
 		</form>
