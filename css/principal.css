@@ -107,6 +107,10 @@ select:hover {
 	outline: 1px solid #000;
 }
 
+.sin_rejilla {
+	outline: 0px solid #000;
+}
+
 .indice_casilla:hover {
 	box-shadow: inset 0px 0px 7px red;
 }
@@ -246,15 +250,21 @@ input[type=radio]:checked + label {
 
 /* tableros */
 
-.tablero_base:before {
+.tablero_base_original:before {
 	display: flex;
 	position: absolute;
-	margin-left: -12px;
-	margin-top: -24px;
 	z-index: -1;
 	content: url("./img/tableros/tablero_original.png");
-	width: 957px;
-	height: 764px;
+	-webkit-transform: scale(0.946);
+	margin-left: -37px;
+	margin-top: -45px;
+}
+
+@-moz-document url-prefix() {
+	.tablero_base_original:before {
+		margin-left: -12px !important;
+		margin-top: -24px !important;
+	}
 }
 
 /* enemigos */
@@ -719,7 +729,6 @@ input[type=radio]:checked + label {
 	-webkit-transform: scale(1.0) rotate(180deg);
 	-moz-transform: scale(1.0) rotate(180deg);
 	-o-transform: scale(1.0) rotate(180deg);
-	transform: scale(1.0) rotate(180eg);
 	margin-left: 1px;
 	margin-top: -21px
 }
@@ -729,7 +738,6 @@ input[type=radio]:checked + label {
 	-webkit-transform: scale(1.0) rotate(270deg);
 	-moz-transform: scale(1.0) rotate(270deg);
 	-o-transform: scale(1.0) rotate(270deg);
-	transform: scale(1.0) rotate(270eg);
 	margin-left: -30px;
 	margin-top: 16px;
 }
@@ -739,7 +747,6 @@ input[type=radio]:checked + label {
 	-webkit-transform: scale(1.0) rotate(90deg);
 	-moz-transform: scale(1.0) rotate(90deg);
 	-o-transform: scale(1.0) rotate(90deg);
-	transform: scale(1.0) rotate(90eg);
 	margin-left: -36px;
 	margin-top: 16px;
 }
@@ -1143,7 +1150,6 @@ input[type=radio]:checked + label {
 	margin-top: -17px;
 	border-color: #000;
 	margin-left: 30px;
-	-moz-margin-start: 
 }
 
 .arriba_abajo {
