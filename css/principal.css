@@ -244,6 +244,19 @@ input[type=radio]:checked + label {
 	border-top: 1px solid #000;
 }
 
+/* tableros */
+
+.tablero_base:before {
+	display: flex;
+	position: absolute;
+	margin-left: -12px;
+	margin-top: -24px;
+	z-index: -1;
+	content: url("./img/tableros/tablero_original.png");
+	width: 957px;
+	height: 764px;
+}
+
 /* enemigos */
 
 .orco, .goblin, .esqueleto, .zombi, .momia, .fimir, .guerrero_caos, .gargola {
