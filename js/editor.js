@@ -95,12 +95,32 @@ function cambiar_imagen(divIdSelect, divIdCasilla) {
 	var tex_codigo = document.getElementById('codigo_mapa');
 	var pre_codigo = document.getElementById("codigo_de_mapa");	
 	if (!(pre_codigo)) {
-		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">"+divIdCasilla+"="+dame_value+"</textarea>";
+		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">?"+divIdCasilla+"="+dame_value+"</textarea>";
 	}
 	else {
 		var pre_tex_codigo = document.getElementById('codigo_de_mapa').value;
-		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">"+pre_tex_codigo+"&"+divIdCasilla+"="+dame_value+"</textarea>";
+		var pre_tex_codigo = pre_tex_codigo.replace('?','');
+		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">?"+divIdCasilla+"="+dame_value+"&"+pre_tex_codigo+"</textarea>";
 	}
+}
+
+function pre_cargar_mapa( name ) {
+	var regexS = "[\\?&]"+name+"=([^&#]*)";
+	var regex = new RegExp ( regexS );
+	var tmpURL = document.getElementById('codigo_de_mapa').value;
+	var results = regex.exec( tmpURL );
+	if( results == null )
+		return"";
+	else
+		return results[1];
+}
+
+function cargar_mapa() {
+	var ocupante_1 = pre_cargar_mapa( 'ocupante_1' );
+	alert(ocupante_1);
+	var ocupante_2 = pre_cargar_mapa( 'ocupante_2' );
+	alert(ocupante_2);
+	document.getElementById('ocupante_1').setAttribute('class', ''+ocupante_1+'');
 }
 
 function cambiar_tablero() {
