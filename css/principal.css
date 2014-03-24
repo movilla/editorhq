@@ -1247,7 +1247,7 @@ input[type=radio]:checked + label {
 
 /* suelo */
 
-.gris, .gris_oscuro, .violeta_oscuro, .azul_oscuro {
+.blanco, .gris, .gris_oscuro, .violeta_oscuro, .azul_oscuro {
 	width: 35px;
 	height: 35px;
 	position: absolute;
@@ -1255,6 +1255,10 @@ input[type=radio]:checked + label {
 	z-index: -1;
 	display: flex;
 	margin-left: -1px;
+}
+
+.blanco {
+	background-color: #FFF;
 }
 
 .gris {
