@@ -91,6 +91,16 @@ function cambiar_imagen(divIdSelect, divIdCasilla) {
 	var dame_value = linea.options[linea.selectedIndex].value;
 	document.getElementById(divIdCasilla).setAttribute('class', dame_value);
 	document.getElementById(divIdCasilla).style.opacity = '1';
+	// guardando los cambios
+	var tex_codigo = document.getElementById('codigo_mapa');
+	var pre_codigo = document.getElementById("codigo_de_mapa");	
+	if (!(pre_codigo)) {
+		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">"+divIdCasilla+"="+dame_value+"</textarea>";
+	}
+	else {
+		var pre_tex_codigo = document.getElementById('codigo_de_mapa').value;
+		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">"+pre_tex_codigo+"-"+divIdCasilla+"="+dame_value+"</textarea>";
+	}
 }
 
 function cambiar_tablero() {
