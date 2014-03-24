@@ -99,7 +99,7 @@ function cambiar_imagen(divIdSelect, divIdCasilla) {
 	}
 	else {
 		var pre_tex_codigo = document.getElementById('codigo_de_mapa').value;
-		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">"+pre_tex_codigo+"-"+divIdCasilla+"="+dame_value+"</textarea>";
+		tex_codigo.innerHTML = "<textarea id=\"codigo_de_mapa\">"+pre_tex_codigo+"&"+divIdCasilla+"="+dame_value+"</textarea>";
 	}
 }
 
