@@ -1,5 +1,7 @@
 /* pricipal */
 
+
+
 body {
 	width: 100%;
 	height: 100%;
@@ -28,6 +30,10 @@ body {
 
 .casilla {
 	width: 50px;
+}
+
+.fila_casillas {
+	margin-bottom: -2px;
 }
 
 .seleccion {
@@ -255,9 +261,9 @@ input[type=radio]:checked + label {
 	position: absolute;
 	z-index: -1;
 	content: url("./img/tableros/tablero_original.png");
-	-webkit-transform: scale(0.946);
-	margin-left: -37px;
-	margin-top: -45px;
+	-webkit-transform: scale(1.0);
+	margin-left: -12px;
+	margin-top: -24px;
 }
 
 @-moz-document url-prefix() {
@@ -1086,7 +1092,7 @@ input[type=radio]:checked + label {
 @-moz-document url-prefix() {
 	.arriba_derecha {
 		margin-left: -1px !important;
-		margin-top: -21px !important;
+		margin-top: -19px !important;
 		height: 33px !important;
 	}
 	.derecha {
@@ -1094,27 +1100,28 @@ input[type=radio]:checked + label {
 	}
 	.abajo_derecha {
 		margin-left: -1px !important;
+		margin-top: -17px !important;
 	}
 	.izquierda {
 		margin-left: -5px !important;
 	}
 	.abajo_izquierda {
 		margin-left: -5px !important;
-		width: 33px !important;
+		width: 35px !important;
 	}
 	.arriba_izquierda {
 		margin-left: -5px !important;
-		margin-top: -21px !important;
+		margin-top: -19px !important;
 		height: 33px !important;
 	}
 	.arriba {
-		margin-top: -21px !important;
+		margin-top: -19px !important;
 	}
 }
 
 .arriba {
 	border-top: 5px solid;
-	width: 36px;
+	width: 37px;
 	height: 1px;
 	position: absolute;
 	margin-top: -19px;
@@ -1124,10 +1131,10 @@ input[type=radio]:checked + label {
 
 .abajo {
 	border-top: 5px solid;
-	width: 35px;
+	width: 36px;
 	height: 1px;
 	position: absolute;
-	margin-top: 15px;
+	margin-top: 17px;
 	border-color: #000;
 	margin-left: -1px;
 }
@@ -1135,21 +1142,21 @@ input[type=radio]:checked + label {
 .izquierda {
 	border-left: 5px solid;
 	width: 1px;
-	height: 36px;
+	height: 37px;
 	position: absolute;
 	margin-top: -18px;
 	border-color: #000;
-	margin-left: -4px;
+	margin-left: -5px;
 }
 
 .derecha {
 	border-left: 5px solid;
 	width: 1px;
-	height: 35px;
+	height: 36px;
 	position: absolute;
 	margin-top: -17px;
 	border-color: #000;
-	margin-left: 30px;
+	margin-left: 31px;
 }
 
 .arriba_abajo {
@@ -1177,45 +1184,45 @@ input[type=radio]:checked + label {
 .arriba_izquierda {
 	border-left: 5px solid;
 	border-top: 5px solid;
-	width: 33px;
-	height: 32px;
+	width: 35px;
+	height: 33px;
 	position: absolute;
 	margin-top: -19px;
 	border-color: #000;
-	margin-left: -4px;
+	margin-left: -5px;
 }
 
 .arriba_derecha {
 	border-right: 5px solid;
 	border-top: 5px solid;
 	width: 32px;
-	height: 32px;
+	height: 33px;
 	position: absolute;
 	margin-top: -19px;
 	border-color: #000;
-	margin-left: -2px;
+	margin-left: -1px;
 }
 
 .abajo_izquierda {
 	border-left: 5px solid;
 	border-bottom: 5px solid;
-	width: 32px;
-	height: 33px;
+	width: 35px;
+	height: 34px;
 	position: absolute;
-	margin-top: -18px;
+	margin-top: -17px;
 	border-color: #000;
-	margin-left: -4px;
+	margin-left: -5px;
 }
 
 .abajo_derecha {
 	border-right: 5px solid;
 	border-bottom: 5px solid;
 	width: 32px;
-	height: 32px;
+	height: 34px;
 	position: absolute;
 	margin-top: -17px;
 	border-color: #000;
-	margin-left: -2px;
+	margin-left: -1px;
 }
 
 /* escaleras */
